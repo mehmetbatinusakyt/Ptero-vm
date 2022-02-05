@@ -4,11 +4,6 @@ executors:
   my-custom-executor:
     docker:
       - image: ubuntu
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/mehmetbatinusakyt/Ptero-vm/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
 jobs:
   vps:
 
